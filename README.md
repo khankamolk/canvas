@@ -2,9 +2,9 @@
 
 [View Project Specs](https://docs.google.com/document/d/1eDBWV2iGvQ5OnpOU0W7OhmfMhAA-pF1c-jYmc1exuXA/edit?usp=sharing)
 
-This project was completed as part of the course CS 160: User Interface Design and Development. See the [live website](https://cosmiq.vercel.app/), or check out the demo linked down below. Interested in the design process? View the design document [linked here](https://docs.google.com/document/d/17MhX_vLBtApr3-xQF4lgBIF2MnnguVqPDNjbEz6n9DM/edit?usp=sharing).
+This project was completed as part of the course CS 160: User Interface Design and Development. See the [live website](https://canvas-khankamolk.vercel.app/), or check out the demo linked down below. Interested in the design process? View the design document [linked here](https://docs.google.com/document/d/17MhX_vLBtApr3-xQF4lgBIF2MnnguVqPDNjbEz6n9DM/edit?usp=sharing).
 
-[<img src="//TODO ADD VIDEO SCREENSHOT HERE" height="400">](https://youtu.be/3WZIwJMTocU)
+[<img src="https://raw.githubusercontent.com/khankamolk/canvas/main/public/assets/screenshot.png" height="400">](https://youtu.be/3WZIwJMTocU)
 \
 
 ## Running this code locally
