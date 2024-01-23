@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+body { /*default body style (black Verdana)*/
+  font-family:Verdana;
+  color:#1E1E1E; 
+  background-color: #FFFFFF;
+}
+
+.ul {
+  list-style: none;
+}
+
+.menu { /* menu style */
+  float: left;
+  background-color: #ED2828;
+  width: 20%;
+  text-align: center;
+}
+
+.menu a { /* style of links within menus */
+  background-color: #28ED31;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: black;
+}
+
+.responsive { /* makes elements,resize responsively,*/
+  max-width:100%;
+  max-height:100%;
+}
+
+.center { /*centers an element*/
+  position: relative;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, 0%);
+}
+
+.main {
+  float: left;
+  background-color: #dd2118;
+  width: 60%;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.right {
+  background-color: #49CAD2;
+  float: left;
+  width: 20%;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
+}
+
+.cover-heading {
+  font-weight:900;
+  font-size:48px;
+}
+
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.image-container {
+  width: 100%;
+}
+
+.image-container img {
+  width: 80%; /* For example, 80% of the container width */
+  max-width: 100%; /* Ensure the image doesn't exceed its original size */
+  display: block; /* Remove any extra spacing from the image */
+  margin: auto; /* Center the image horizontally within the container */
+}
+
+/*-- BUTTON STYLES --*/
+
+.landing-btn-secondary {
+  background-color: #FFFF; 
+  color: #1E1E1E;
+  border-color: #f2f2f2;
+}
+.landing-btn-secondary:hover {
+  background-color: #f2f2f2;
+}
+
+.landing-btn-primary {
+  background-color: #393939; 
+  color: #FFFF;
+}
+.landing-btn-primary:hover {
+  background-color: #1E1E1E;
+}
+
+/*-- SIDEBAR STYLES --*/
+
+.sidebar {
+  position: fixed;
+  min-width: 270px;
+  max-width: 270px;
+  top: 51px;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  display: block;
+  padding: 20px;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  background-color: #FFFF;
+  border-right: 1px solid #eee;
+  -webkit-column-break-inside: avoid; 
+}
+
+.side-bar .header {
+  color: #a0a0a0;
+}
+
+.sidebar ul li.active>a {
+    background: 0 0;
+    font-weight: 550;
+    color: #1E1E1E;
+}
+
+.sidebar ul li {
+  padding: 10px 0;
+  color: #1E1E1E;
+}
+
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}

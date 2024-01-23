@@ -1,0 +1,87 @@
+html { overflow-y: scroll; }
+
+* {
+    box-sizing: border-box;
+  }
+  body { /*default body style (black Verdana)*/
+    font-family:Verdana;
+    color:#1E1E1E; 
+    background-color: #232323;
+  }
+
+
+/*-- NAVBAR STYLES --*/
+
+nav.navbar {
+    background-color: #35363A;
+}
+
+.navbar-nav.flex-row {
+    flex-wrap: nowrap; /* This prevents the items from wrapping to the next line when the navbar collapses */
+}
+
+.btn {
+    background-color: #35363A;
+}
+
+.active {
+    background-color: #28292c;
+}
+
+.fas {
+    color: #FFFF;
+}
+
+.dropdown-toggle {
+    border-color: #35363A;
+}
+.dropdown-toggle:hover {
+    background-color: #35363A;
+    border-color: #35363A;
+}
+
+.dropdown-menu {
+    background-color: #35363A;
+}
+
+.dropdown-item {
+    color: #FFFF;
+    font-size: 14px;
+}
+.dropdown-item:hover {
+    color: #FFFF;
+    background-color: #28292c;
+}
+
+#colorpicker {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+  }
+  #colorpicker::-webkit-color-swatch {
+    border-radius: 50%;
+    border: 2px solid #51535a;
+  }
+  #colorpicker::-moz-color-swatch {
+    border-radius: 50%;
+    border: 2px solid #51535a;
+  }
+
+#colorfield {
+    background-color: #35363A;
+    border-color: #51535a;
+}
+
+#colorsubmit {
+    background-color: #51535a;
+    color: #FFFF;
+}
+#colorsubmit:hover {
+    background-color: #28292c;
+    color: #FFFF;
+}

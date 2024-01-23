@@ -1,0 +1,101 @@
+<!-- Starter code for Project 4: Creativity Canvas!-->
+<!-- CS160 User Interface Design & Development Summer 2023 at UC Berkeley-->
+<!-- Lovingly prepared by Shm Garanganao Almeda-->
+<!-- You are not required to use ANY of this example code. I just thought it might be helpful to have something to work off of. -->
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Canvas</title>
+    <!-- Load the Paper.js library (from http://paperjs.org/) -->
+    <script type="text/javascript" src="js/paper-full.js"></script>
+    <!-- Link to our Paperscript file containing our custom drawing app code, and associate it with the "my-canvas" Canvas Object defined in the HTML layout below-->
+    <script type="text/paperscript" src="js/my-drawing-app.js" canvas="my-canvas"></script>
+
+    <!-- add Bootstrap 4 (from https://getbootstrap.com/docs/4.0/getting-started/download/)-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- add jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Include the FileSaver.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+
+    <!-- Importing some font families -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+    <!-- Importing some icons -->
+    <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
+    <!--add the Google Material Symbols Font (from https://fonts.google.com/icons ) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- Linking styles sheet -->
+    <link rel="stylesheet" type="text/css" href="./css/canvas.css">
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Canvas
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+          <a class="dropdown-item" href="gallery.html">Back to Gallery</a>
+          <a class="dropdown-item" href="gallery.html">Save to Gallery</a>
+          <a class="dropdown-item" id=export href="#">Export as...</a>
+        </div>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 d-flex flex-row">
+          <li class="nav-item px-2">
+            <input type="color" id="colorpicker" value="#00000">
+          </li>
+          <li class="nav-item px-2">
+            <button type="button" class="btn toolkit" id = "default" > <!-- pen -->
+              <i class="fas fa-regular fa-pen"></i>
+            </button>
+          </li>
+          <li class="nav-item px-2">
+            <button type="button" class="btn toolkit" id = "pen_size_increase" > <!-- button to increase pen size -->
+              <i class="fas fa-regular fa-plus"></i>
+            </button>
+          </li>
+          <li class="nav-item px-2">
+            <button type="button" class="btn toolkit" id = "pen_size_decrease" > <!-- button to decrease pen size -->
+             <i class="fas fa-regular fa-minus"></i>
+            </button>   
+          </li>
+          <li class="nav-item px-2">
+            <button type="button" class="btn toolkit" id = "eraser" > <!-- button to erase -->
+              <i class="fas fa-regular fa-eraser"></i>
+            </button>
+          </li>
+        </ul>
+        <div class="d-flex justify-content-center">
+          <div class="input-group w-auto">
+            <input id = "colorfield" type="text" class="form-control" placeholder="Hex Code (#RRGGBB)" aria-label="" aria-describedby="basic-addon1">
+            <button class="btn my-2 my-sm-0" type="button" id = "colorsubmit">Submit</button>
+          </div>
+      </div>
+    </nav>
+    
+    <br/><br/><br/>
+    <div class="container text-center">
+      <canvas id="my-canvas" width = "900" height = "700" style="background: #ffffff; "></canvas> <!-- our Canvas object -->
+    </div>
+  </body>
+  <script>
+    $(".btn.toolkit").click(function(){
+      $(".btn.toolkit").removeClass("active");
+      $(this).addClass("active");
+    });
+  </script>
+
+</html>
