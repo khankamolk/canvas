@@ -3,12 +3,13 @@
 [View Project Specs](https://docs.google.com/document/d/1eDBWV2iGvQ5OnpOU0W7OhmfMhAA-pF1c-jYmc1exuXA/edit?usp=sharing)
 
 This project was completed as part of the course CS 160: User Interface Design and Development. See the [live website](https://canvas-khankamolk.vercel.app/), or check out the demo linked down below. 
+
 \
 [<img src="https://raw.githubusercontent.com/khankamolk/canvas/main/public/assets/screenshot.png" height="400">](https://youtu.be/3WZIwJMTocU)
 
 \
 Interested in the design process of this project? You can also view our design document [linked here](https://docs.google.com/document/d/17MhX_vLBtApr3-xQF4lgBIF2MnnguVqPDNjbEz6n9DM/edit?usp=sharing).
-\
+
 
 ## Running this code locally
 
